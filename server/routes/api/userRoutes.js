@@ -39,6 +39,7 @@ router.route('/auth')
             message: 'You have been logged out.'
         });
     });
+    //TODO patch to edit your user information
 
 router.route('/users')
     
@@ -51,14 +52,11 @@ router.route('/users')
                 });
             })
             .catch(err => {
-                
                 if (err.code === 11000) {
                     res.status(400).json({
                         message: 'Username already in use.'
                     })
                 }
-
-                
                 next(err);
             });
     });

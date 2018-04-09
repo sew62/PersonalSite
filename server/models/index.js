@@ -1,5 +1,7 @@
-module.exports = {
-  Videos: require("./video"),
-  Comment: require("./comment"),
-  User: require('./user')
+import user from './user';
+
+const db = {
+  User: user
 };
+
+export default db;
