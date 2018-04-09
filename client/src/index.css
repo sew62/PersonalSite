@@ -1,3 +1,9 @@
+@font-face { font-family: Segoe; src: url('./fonts/Segoe.ttf'); }
+
+html, body, div, span {
+  font-family: Segoe, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* font-family defined in html page */
 body {
   margin: 0;

@@ -1,5 +1,6 @@
-import { Schema, model } from "mongoose";
-import { genSalt, hash, compare } from "bcrypt";
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const bcrypt = require('bcrypt');
 const WORK_FACTOR = 10;
 
 const UserSchema = new Schema({
@@ -22,10 +23,10 @@ UserSchema.pre('save', function (next) {
         return next();
     }
 
-    genSalt(WORK_FACTOR, function (err, salt) {
+    bcrypt.genSalt(WORK_FACTOR, function (err, salt) {
         if (err) return next(err);
 
-        _hash(user.password, salt, function (err, hash) {
+        bcrypt.hash(user.password, salt, function (err, hash) {
             if (err) return next(err);
 
             user.password = hash;
@@ -36,13 +37,13 @@ UserSchema.pre('save', function (next) {
 
 UserSchema.methods.validatePassword = function (candidatePassword) {
     return new Promise((resolve, reject) => {
-        compare(candidatePassword, this.password, function (err, isMatch) {
+        bcrypt.compare(candidatePassword, this.password, function (err, isMatch) {
             if (err) return reject(err);
             resolve(isMatch);
         });
     });
 };
 
-const User = model('User', UserSchema);
+const User = mongoose.model('User', UserSchema);
 
-export default User;
+module.exports = User;

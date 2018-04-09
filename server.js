@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === "production") {
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/scottSite");
 
-require('./passport')(app);
+require('./server/passport')(app);
 
 // API routes
 app.use(routes);

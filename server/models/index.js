@@ -1,7 +1,5 @@
-import user from './user';
-
 const db = {
-  User: user
+  User: require('./user')
 };
 
-export default db;
+module.exports = db;

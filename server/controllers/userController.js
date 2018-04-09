@@ -1,4 +1,4 @@
-import db from "./../models";
+const db = require("./../models");
 
 const userController = {
   findAll: function(req, res) {
@@ -25,4 +25,4 @@ const userController = {
   }
 };
 
-export default userController;
+module.exports = userController;
