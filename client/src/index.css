@@ -15,7 +15,11 @@ body {
 
 #my-nav {
   padding: 1rem .5rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#avatar {
+  max-height: 2rem;
 }
 
 .right-align {

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
   return (
     <nav id="my-nav">
-      <Link to="/">Scott Williams</Link>
+      <Link to="/"><img id="avatar" alt="Scott's Avatar" src="images/myicon.png"/>&nbsp;Scott Williams</Link>
       <span className="right-align">
         <Link to="/">Home</Link>&nbsp;|&nbsp;
         <Link to="/contact">Contact</Link>&nbsp;|&nbsp; 

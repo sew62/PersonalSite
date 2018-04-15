@@ -2,6 +2,7 @@ import React from 'react';
 import Button from '../components/Button';
 import './nomatch.css';
 
+//@TODO polish screen so it doesn't have any scroll capabilities on desktop
 const NoMatch = () => (
   <section id='no-match-page'>
     <div id='sorry-text'>I'm sorry, <strong>{window.location.pathname}</strong> doesn't contain a page...</div>
