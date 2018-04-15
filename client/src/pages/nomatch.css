@@ -1,6 +1,6 @@
 #no-match-page {
     text-align: center;
-    margin-top: 2rem
+    margin-top: 2rem;
 }
 
 #sad-face-icon {
@@ -8,5 +8,5 @@
 }
 
 #sorry-text {
-    margin-bottom: 1rem;
+    margin: 0 1.5rem 1rem 1.5rem;
 }

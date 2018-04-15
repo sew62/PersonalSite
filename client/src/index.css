@@ -1,11 +1,10 @@
 @font-face { font-family: Segoe; src: url('./ext/fonts/Segoe.ttf'); }
 
-html, body, div, span {
+html, body {
   font-family: Segoe, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
 }
 
-/* font-family defined in html page */
 body {
   margin: 0;
   padding: 0;
@@ -16,4 +15,9 @@ body {
 
 #my-nav {
   padding: 1rem .5rem;
+  font-size: 1.5rem;
+}
+
+.right-align {
+  float: right;
 }
