@@ -1,5 +1,5 @@
 {
-  "name": "PersonalSite",
+  "name": "PersonalSite", 
   "version": "1.0.0",
   "description": "Scott's personal website",
   "main": "server.js",
