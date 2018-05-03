@@ -13,9 +13,19 @@ body {
   letter-spacing: .2rem;
 }
 
+a {
+  color: #FFE;
+}
+
 #my-nav {
   padding: 1rem .5rem;
   font-size: 1.2rem;
+  position: absolute;
+  width: 100%;
+}
+
+#nav-back {
+  height: 64px;
 }
 
 #avatar {
@@ -24,4 +34,42 @@ body {
 
 .right-align {
   float: right;
+}
+
+#menu-icon {
+  margin-right: 1rem;
+  background-color: inherit;
+  border: 0;
+  display: none;
+}
+
+#menu-icon:focus {
+  outline: 0;
+}
+
+.menu-li {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+#menu-links {
+  background-color: #6071A8;
+  line-height: 2.5rem;
+}
+
+hr {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #article1 {
+      padding-top: 30px;
+  }
+  #nav-links {
+      display: none;
+  }
+  #menu-icon {
+      display: inherit;
+  }
 }

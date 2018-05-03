@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const routes = require("./server/routes");
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -15,10 +15,10 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Set up promises with mongoose
-mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/scottSite");
+// mongoose.Promise = global.Promise;
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/scottSite");
 
-require('./server/passport')(app);
+// require('./server/passport')(app);
 
 // API routes
 app.use(routes);

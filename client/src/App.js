@@ -10,6 +10,7 @@ const App = () => {
         <Router>
           <div>
             <NavBar/>
+            <div id="nav-back" />
             <div id="main-content">
               <Switch>
                 <Route exact path="/" component={Home}/>
