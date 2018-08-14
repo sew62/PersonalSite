@@ -3,12 +3,13 @@
 }
 
 #article-bgd {
-    background-image: url('./../ext/images/code-bgd.jpeg');
-    background-repeat: no-repeat;
-    background-position: 0;
-    background-attachment: fixed;
+    background: url('./../ext/images/code-bgd.jpeg') no-repeat center center fixed;
     height: 350px;
     text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #article1 {

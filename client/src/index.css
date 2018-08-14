@@ -28,6 +28,14 @@ a {
   height: 64px;
 }
 
+.nav-button:hover {
+  color: #FFC661;
+}
+
+.nav-button:focus {
+  color: #FFE;
+}
+
 #avatar {
   max-height: 2rem;
 }
