@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './pages/Home';
 import NoMatch from './pages/NoMatch';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                 <Route component={NoMatch} />
               </Switch>
             </div>
+            <Footer/>
           </div>
         </Router>
       </div>
