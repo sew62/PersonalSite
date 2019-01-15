@@ -8,7 +8,6 @@ html, body {
 body {
   margin: 0;
   padding: 0;
-  background-color: #273B7A;
   color: #FFE;
   letter-spacing: .2rem;
 }
@@ -17,11 +16,47 @@ a {
   color: #FFE;
 }
 
+.right-align {
+  float: right;
+}
+
+hr {
+  margin: 0;
+}
+
+.max-width-container {
+  width: 100%;
+  background-clip: padding-box;
+}
+
+.article-content {
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  max-width: 980px;
+}
+
+.article-white {
+  background-color:#FFE;
+  color: black;
+}
+
+.article-blue {
+  background-color: #273B7A;
+}
+
+.article-yellow {
+  background-color: #F7D08A;
+  color: black;
+}
+
+/*header*/
 #my-nav {
   padding: 1rem .5rem;
   font-size: 1.2rem;
   position: absolute;
   width: 100%;
+  background-color: #273B7A;
 }
 
 #nav-back {
@@ -40,47 +75,10 @@ a {
   max-height: 2rem;
 }
 
-.right-align {
-  float: right;
-}
-
-#menu-icon {
-  margin-right: 1rem;
-  background-color: inherit;
-  border: 0;
-  display: none;
-}
-
-#menu-icon:focus {
-  outline: 0;
-}
-
-.menu-li {
-  width: 100%;
-  text-align: center;
-  padding: 5px 0 5px 0;
-}
-
-#menu-links {
-  background-color: #6071A8;
-  line-height: 2.5rem;
-}
-
-hr {
-  margin: 0;
-}
-
 /*footer*/
 footer {
-  margin-bottom: 1.5rem;
+  background-color: #273B7A;
 }
-
-.max-width-content {
-  max-width: 960px;
-  text-align: center;
-  margin: 0 auto;
-}
-
 
 @media screen and (min-width: 992px) {
   #footer-links {
@@ -88,14 +86,17 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
-  #article1 {
-      padding-top: 30px;
+@media screen and (min-width: 600px) {
+  #menu-icon {
+    display: none;
   }
+}
+
+@media screen and (max-width: 600px) {
   #nav-links {
       display: none;
   }
   #menu-icon {
-      display: inherit;
+      display: block;
   }
 }

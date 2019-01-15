@@ -10,18 +10,19 @@ const App = () => {
       <div>
         <Router>
           <div>
-            <NavBar/>
+            <header>
+              <NavBar/>
+            </header>
             <div id="nav-back" />
             <div id="main-content">
               <Switch>
                 <Route exact path="/" component={Home}/>
-                {/* <Route exact path="/ideas" component={Ideas} /> */}
                 {/* <ProtectedRoute exact path="/client" redirectTo="/login" component={Client} /> */}
                 {/* <Route exact path="/login" component={LogIn} /> */}
-                {/* <Route exact path="/create" component={CreateAccount} /> */}
                 <Route component={NoMatch} />
               </Switch>
             </div>
+            <hr/>
             <Footer/>
           </div>
         </Router>

@@ -2,11 +2,10 @@ import React from 'react';
 import Button from '../components/Button';
 import './nomatch.css';
 
-//@TODO polish screen so it doesn't have any scroll capabilities on desktop
 const NoMatch = () => {
   document.body.style.overflow = "hidden";
   return (
-    <section id='no-match-page'>
+    <section id='no-match-page' className="max-width-container article-blue">
       <div id='sorry-text'>I'm sorry, <strong>{window.location.pathname}</strong> doesn't contain a page...</div>
       <Button dest='/' text='Take me home!'/>
       {/* Inline svg icon converted to react syntax to enhance loading speed */}

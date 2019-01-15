@@ -1,0 +1,20 @@
+#menu-icon {
+  margin-right: 1rem;
+  background-color: inherit;
+  border: 0;
+}
+
+#menu-icon:focus {
+  outline: 0;
+}
+
+.menu-li {
+  width: 100%;
+  text-align: center;
+  padding: 5px 0 5px 0;
+}
+
+#menu-links {
+  background-color: #6071A8;
+  line-height: 2.5rem;
+}

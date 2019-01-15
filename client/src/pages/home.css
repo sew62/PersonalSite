@@ -1,7 +1,3 @@
-#home-page {
-    
-}
-
 #article-bgd {
     background: url('./../ext/images/code-bgd.jpeg') no-repeat center center fixed;
     height: 350px;
@@ -12,7 +8,7 @@
     background-size: cover;
 }
 
-#article1 {
+#tagline {
     padding-top: 100px;
     padding-left: .5rem;
     padding-right: .5rem;
@@ -25,13 +21,19 @@
     #article-bgd {
         height: 250px;
     }
-    #article1 {
+    #tagline {
         padding-top: 45px;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    #article1 {
+    #tagline {
         padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #tagline {
+        padding-top: 1px;
     }
 }
