@@ -14,6 +14,7 @@ body {
 
 a {
   color: #FFE;
+  overflow-wrap: break-word;
 }
 
 .right-align {
@@ -38,12 +39,10 @@ hr {
   align-items:center;
 }
 
-.vcenter {
-  /* min-height: 100%;
-  height: 100%; */
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+.article-content-sm {
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem 2rem;
 }
 
 .article-image {
@@ -98,6 +97,12 @@ footer {
 @media screen and (min-width: 992px) {
   #footer-links {
     margin-top: 42px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .pad-me {
+      padding-bottom: 2rem;
   }
 }
 

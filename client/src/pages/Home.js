@@ -22,14 +22,14 @@ class Home extends React.Component {
           <MyArticle
             image="images/scottandnicole.jpg"
             alt="Scott and Nicole"
-            textContent={txt}
+            textContent={intro}
             swap={true}
             />
         </div>
         <div className="max-width-container article-white">
           <MyArticle
-            image="https://via.placeholder.com/300"
-            textContent={txt}
+            image="images/mediumicon.png"
+            textContent={medium}
             swap={false}
             />
         </div>
@@ -37,7 +37,7 @@ class Home extends React.Component {
           <MyArticle
             image="https://via.placeholder.com/300"
             textContent={txt}
-            swap={false}
+            swap={true}
             />
         </div>
       </div>
@@ -46,3 +46,6 @@ class Home extends React.Component {
 }
 
 export default Home;
+
+const intro = "Hello! I'm Scott Williams, a passionate software engineer from Akron, Ohio. Welcome to my website. It was designed and created from scratch by myself - using React! I'm a versatile developer who loves fooling around with the latest technologies. I have professional experience with React, Angular, and Backbone, but I decided to make this site in React because I was helping teach React to coding bootcamp students at the time of its inception. Thanks for checking it out, please don't hesitate to reach out using any of my provided avenues of contact!";
+const medium = "Whenever I run into a challenging topic with a sneaky solution, I turn to Medium to share my learnings with the world. I'm still relatively new to blogging, but being a part of the development community is extremely important to me, so I try to put out new articles on a regular basis. Check it out! <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://medium.com/@scott.williams.dev\" style=\"color:#273B7A\">https://medium.com/@scott.williams.dev</a>";
