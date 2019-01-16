@@ -20,18 +20,25 @@ class Home extends React.Component {
         </div>
         <div className="max-width-container article-blue">
           <MyArticle
-            image="https://via.placeholder.com/150"
-            textContent={txt}/>
+            image="images/scottandnicole.jpg"
+            alt="Scott and Nicole"
+            textContent={txt}
+            swap={true}
+            />
         </div>
         <div className="max-width-container article-white">
           <MyArticle
-            image="https://via.placeholder.com/150"
-            textContent={txt}/>
+            image="https://via.placeholder.com/300"
+            textContent={txt}
+            swap={false}
+            />
         </div>
         <div className="max-width-container article-yellow">
           <MyArticle
-            image="https://via.placeholder.com/150"
-            textContent={txt}/>
+            image="https://via.placeholder.com/300"
+            textContent={txt}
+            swap={false}
+            />
         </div>
       </div>
     );
