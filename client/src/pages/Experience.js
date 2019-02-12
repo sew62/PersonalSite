@@ -16,13 +16,14 @@ class Experience extends React.Component {
         <div className="max-width-container article-blue">
           <MyArticle
             image="images/uakron.jpg"
-            alt="Scott and Nicole"
+            alt="The University of Akron"
             textContent={school}
             swap={true}
             />
         </div>
         <div className="max-width-container article-white">
           <MyArticle
+            alt="Macy's Thanksgiving Day Parade"
             image="images/macys.jpg"
             textContent={macys}
             swap={false}
@@ -30,6 +31,7 @@ class Experience extends React.Component {
         </div>
         <div className="max-width-container article-yellow">
           <MyArticle
+            alt="Case Western Bootcamp Graduation"
             image="images/case-bootcamp.jpeg"
             textContent={bootcamp}
             swap={true}
@@ -38,8 +40,16 @@ class Experience extends React.Component {
         <div className="max-width-container article-blue">
           <MyArticle
             image="images/kalibrate.jpg"
-            alt="Scott and Nicole"
+            alt="Kalibrate"
             textContent={kalibrate}
+            swap={false}
+            />
+        </div>
+        <div className="max-width-container article-white">
+          <MyArticle
+            alt="TEALS"
+            image="images/tealsk12.jpg"
+            textContent={teals}
             swap={true}
             />
         </div>
@@ -78,3 +88,10 @@ const kalibrate = 'My time with Kalibrate has been nothing short of career-alter
 'Our goals are to build 12 Factor Apps that scale horizontally, live in the cloud, and are multi-tennant. ' +
 'This is no doubt a large undertaking and still has a long way to go but we have paved a way for the company to follow. ' +
 'I have worked with Angular, C# (.NET Core), Protractor, Docker, Kubernetes, amongst others.';
+
+const teals = 'While attending a big data meetup, I connected with a man who runs the Cleveland branch of TEALS (' +
+'Technology Education and Literacy in Schools). I had never heard of the program, but I interviewed with him and ' +
+'I was accepted as a volunteer computer science teacher! It has been a very fun and rewarding job ( even though it ' +
+'doesn\'t pay well ;) ) and I spend 2-3 mornings per week teaching high schoolers the fundamentals of computer science. ' +
+'I have had multiple of the 12 students in the inner-city classroom ask me questions about my career and about ' +
+'what it would be like to take a computer science program in college. That is the whole reason I took the job!!';
