@@ -26,8 +26,8 @@ class NavBar extends React.Component {
               <Link className="nav-button" to="/contact">
                 Contact
               </Link>&nbsp;|&nbsp; 
-              <Link className="nav-button" to="/portfolio">
-                Portfolio
+              <Link className="nav-button" to="/experience">
+                Experience
               </Link>
             </span>
             <button id="menu-icon" onClick={this.toggleMenu.bind(this)}><img src="images/menuicon.svg" alt="Menu Icon"/></button>
@@ -36,7 +36,7 @@ class NavBar extends React.Component {
         <div id="menu-links" style={{display: this.state.disp}}>
           <div className="menu-li" style={{marginTop: "15px"}}><Link to="/">Home</Link></div>
           <div className="menu-li"><Link to="/contact">Contact</Link></div>
-          <div className="menu-li"><Link to="/portfolio">Portfolio</Link></div>
+          <div className="menu-li"><Link to="/experience">Experience</Link></div>
         </div>
       </div>
     );

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import NoMatch from './pages/NoMatch';
 import Footer from './components/Footer';
+import Experience from "./pages/Experience";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
               <Switch>
               <Route exact path="/" component={Home}/>
               <Route exact path="/contact" component={Contact}/>
+              <Route exact path="/experience" component={Experience}/>
                 {/* <ProtectedRoute exact path="/client" redirectTo="/login" component={Client} /> */}
                 {/* <Route exact path="/login" component={LogIn} /> */}
                 <Route component={NoMatch} />
