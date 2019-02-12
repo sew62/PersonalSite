@@ -1,0 +1,47 @@
+#article-bgd {
+    background: url('./../ext/images/code-bgd.jpeg') no-repeat center center fixed;
+    height: 350px;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#tagline {
+    padding-top: 100px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+.contact-article {
+    text-align: center;
+}
+
+#contact-page a:hover {
+    color: #F7D08A;
+}
+
+@media only screen and (max-width: 600px) {
+    #article-bgd {
+        height: 250px;
+    }
+    #tagline {
+        padding-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #tagline {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #tagline {
+        padding-top: 1px;
+    }
+}
