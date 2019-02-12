@@ -28,14 +28,14 @@ class Experience extends React.Component {
         </div>
         <div className="max-width-container article-white">
           <MyArticle
-            image="images/mediumicon.png"
-            textContent={medium}
+            image="images/case-bootcamp.jpeg"
+            textContent={bootcamp}
             swap={false}
             />
         </div>
         <div className="max-width-container article-yellow">
           <MyArticle
-            image="https://via.placeholder.com/300"
+            image="images/case-bootcamp.jpeg"
             textContent={txt}
             swap={true}
             />
@@ -52,4 +52,10 @@ const school = 'My major in college was an easy choice, but I had no idea what I
 '"You\'re good with computers, you should major in technology!!" - My Mom, probably... This turned out to be the perfect ' +
 'marriage of my math skills, my attention to detail, and my passion for getting to know how things worked. I left The ' +
 'University of Akron in May of 2016 with a B.S. in Computer Science - Management Track ready to learn how things worked "in the real world".';
-const medium = "Whenever I run into a challenging topic with a sneaky solution, I turn to Medium to share my learnings with the world. I'm still relatively new to blogging, but being a part of the development community is extremely important to me, so I try to put out new articles on a regular basis. Check it out! <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://medium.com/@scott.williams.dev\" style=\"color:#273B7A\">https://medium.com/@scott.williams.dev</a>";
+const bootcamp = 'Near the end of my tenure with Macy\'s, I decided that I wasn\'t satisfied with the amount of ' +
+'new subjects I was learning. When I heard about the Coding Bootcamp at Case Western Reserve University, I jumped ' +
+'with excitement because it meant the opportunity to - not only gain new industry experience and make connections - ' +
+'but also to help other passionate individuals get their start in my field as well! I spend 6 months working 3 days ' +
+'a week for several hours at a time being a TA (Teaching Assistant). I graded programs, assisted with lectures, debugged ' +
+'many many projects, and most importantly mentored sprouting devs. This was an amazing experience and I took some ' +
+'cool new skills from it ( this website is built in React :) )';
