@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="container-fluid text-center text-md-left">
       <div className="row">
         <div className="col-md-6 col-sm-12">
-          <h5 className="text-capitalize"><a href="images/Williams_Resume.pdf" download style={{color: "#ffc661"}}>Download my resume!</a></h5>
+          <h5 className="text-capitalize"><a href="images/SCOTT_WILLIAMS_Resume.pdf" download style={{color: "#ffc661"}}>Download my resume!</a></h5>
           <p>Thanks for stopping by! Don't hesitate to reach out and connect with me
               via any of the provided channels.
           </p>
